@@ -1,1 +1,75 @@
+# --- Python: cache, build, rozszerzenia ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+.eggs/
+*.egg-info/
+pip-wheel-metadata/
+
+# --- Testy / pokrycie / lint ---
+.pytest_cache/
+.coverage*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.pytype/
+.pyre/
+.ruff_cache/
+
+# --- Notebooki ---
+.ipynb_checkpoints/
+
+# --- Środowiska wirtualne ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Logi / tymczasowe / systemowe ---
+*.log
+logs/
+*.tmp
+*.swp
+*.swo
+*~
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- Dane lokalne / bazy (jeśli powstaną lokalnie) ---
+*.sqlite
+*.sqlite3
+*.db
+data/
+datasets/
+uploads/
+tmp/
+.cache/
+
+# --- Streamlit: sekrety (ZOSTAW konfigurację, ignoruj tylko sekrety) ---
 .streamlit/secrets.toml
+
+# --- Pliki środowiskowe (jeśli używasz dotenv lokalnie) ---
+.env
+.env.*
+!.env.example  # opcjonalnie: szablon bez sekretów
+
+# --- IDE ---
+# PyCharm / IntelliJ
+.idea/
+# VS Code
+.vscode/
+
+# --- Inne menedżery pakietów (jeśli nie używasz) ---
+Pipfile
+Pipfile.lock
+poetry.lock
